@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import  App  from 'App';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-// import { fetchCastMovies, fetchMovieDetails, fetchReviewsMovies, fetchSearchMovies, fetchTrendingMovies } from 'API/API';
+import { fetchCastMovies, fetchMovieDetails, fetchReviewsMovies, fetchSearchMovies, fetchTrendingMovies } from 'API/API';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter  basename="/test-homework-5">
@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>
   </BrowserRouter>
 );
-// fetchTrendingMovies();
+fetchTrendingMovies()
 // fetchMovieDetails(298618);
 // fetchSearchMovies(`Batman`);
 // fetchReviewsMovies(268);
